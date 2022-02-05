@@ -565,23 +565,14 @@
                 headerItem = "header.header";
                 headerItemHeight = document.querySelector(headerItem).offsetHeight;
             }
-            let options = {
-                speedAsDuration: true,
-                speed,
-                header: headerItem,
-                offset: offsetTop,
-                easing: "easeOutQuad"
-            };
             document.documentElement.classList.contains("menu-open") ? menuClose() : null;
-            if ("undefined" !== typeof SmoothScroll) (new SmoothScroll).animateScroll(targetBlockElement, "", options); else {
-                let targetBlockElementPosition = targetBlockElement.getBoundingClientRect().top + scrollY;
-                targetBlockElementPosition = headerItemHeight ? targetBlockElementPosition - headerItemHeight : targetBlockElementPosition;
-                targetBlockElementPosition = offsetTop ? targetBlockElementPosition - offsetTop : targetBlockElementPosition;
-                window.scrollTo({
-                    top: targetBlockElementPosition,
-                    behavior: "smooth"
-                });
-            }
+            let targetBlockElementPosition = targetBlockElement.getBoundingClientRect().top + scrollY;
+            targetBlockElementPosition = headerItemHeight ? targetBlockElementPosition - headerItemHeight : targetBlockElementPosition;
+            targetBlockElementPosition = offsetTop ? targetBlockElementPosition - offsetTop : targetBlockElementPosition;
+            window.scrollTo({
+                top: targetBlockElementPosition,
+                behavior: "smooth"
+            });
             functions_FLS(`[gotoBlock]: Юхуу...едем к ${targetBlock}`);
         } else functions_FLS(`[gotoBlock]: Ой ой..Такого блока нет на странице: ${targetBlock}`);
     };

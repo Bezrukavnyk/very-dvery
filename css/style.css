@@ -1011,7 +1011,7 @@ h1 {
 }
 
 .poits {
-  margin-top: 15vh;
+  margin-top: 20vh;
   margin-bottom: 15vh;
 }
 .poits__container {
@@ -1157,8 +1157,8 @@ h2 {
 .tabs__title--catalog::after {
   position: absolute;
   width: 100%;
-  height: 2px;
-  bottom: 0;
+  height: 3px;
+  bottom: -5px;
   left: 0;
   content: "";
   background: #d7dbf8;
@@ -1744,6 +1744,7 @@ h2 {
     padding: 50px 16px 16px 16px;
     background: #FFFFFF;
     box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.12);
+    transition: 0.3s linear;
     border-radius: 18px;
     display: flex;
     flex-direction: column;
@@ -1758,6 +1759,10 @@ h2 {
   }
   .peculiarities__wrap--second-collumn .second-collumn__points li:last-child p:last-child {
     line-height: 110%;
+  }
+  .peculiarities__wrap--second-collumn .second-collumn__points li:hover {
+    box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.32);
+    transition: 0.3s linear;
   }
 }
 .rules__container {
@@ -1905,13 +1910,15 @@ h2 {
   width: 80%;
   object-fit: cover;
   object-position: top;
-  position: absolute;
+  position: relative;
 }
 
 .product__slider--wrap {
   position: relative;
   width: 420px;
   padding-bottom: 20px;
+  height: 100%;
+  flex: 1 1 auto;
 }
 
 .product__header {
