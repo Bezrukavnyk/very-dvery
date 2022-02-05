@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220205115345">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap&_v=20220205115345" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20220205115345" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<a href="" class="header__logo--ibg">
+						<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
+					</a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html#banner">Головна</a></li>
+						<li><a href="index.html#catalog">Каталог</a></li>
+						<li><a href="index.html#catalog">Знижки</a></li>
+						<li><a href="index.html#include">Технологія</a></li>
+						<li><a href="index.html#our-work">Фото робіт</a></li>
+						<li><a href="index.html#review">Відгуки</a></li>
+						<li><a href="index.html#peculiarities">Особливості</a></li>
+						<li><a href="index.html#footer">Контакти</a></li>
+					</ul>
+					<div class="mobile-nav__footer">
+						<div class="social__link">
+							<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10.5 0C4.70093 0 0 4.70093 0 10.5C0 16.299 4.70093 21 10.5 21C16.299 21 21 16.299 21 10.5C21 4.70093 16.299 0 10.5 0ZM12.9872 7.25593H11.4089C11.2219 7.25593 11.014 7.50202 11.014 7.82905V8.96874H12.9883L12.6897 10.5941H11.014V15.4733H9.15139V10.5941H7.46155V8.96874H9.15139V8.0128C9.15139 6.64124 10.103 5.52671 11.4089 5.52671H12.9872V7.25593Z" fill="#4B4B5F" />
+							</svg>
+							<a href="http://" target="_blank" rel="noopener noreferrer"></a>
+						</div>
+						<div class="social__link">
+							<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.7812 10.5C13.7812 11.3702 13.4355 12.2048 12.8202 12.8202C12.2048 13.4355 11.3702 13.7812 10.5 13.7812C9.62975 13.7812 8.79515 13.4355 8.1798 12.8202C7.56444 12.2048 7.21874 11.3702 7.21874 10.5C7.21874 10.313 7.23843 10.1303 7.27233 9.95311H6.12499V14.3248C6.12499 14.6289 6.37109 14.875 6.67515 14.875H14.3259C14.4716 14.8747 14.6113 14.8166 14.7142 14.7135C14.8172 14.6103 14.875 14.4705 14.875 14.3248V9.95311H13.7276C13.7615 10.1303 13.7812 10.313 13.7812 10.5V10.5ZM10.5 12.6875C10.7873 12.6874 11.0718 12.6307 11.3373 12.5207C11.6027 12.4107 11.8439 12.2495 12.047 12.0462C12.2501 11.843 12.4112 11.6018 12.5211 11.3363C12.631 11.0708 12.6876 10.7862 12.6875 10.4989C12.6874 10.2116 12.6307 9.92704 12.5207 9.66161C12.4107 9.39617 12.2495 9.155 12.0462 8.95187C11.843 8.74874 11.6018 8.58763 11.3363 8.47774C11.0708 8.36785 10.7862 8.31132 10.4989 8.3114C9.91859 8.31154 9.36211 8.54221 8.95187 8.95265C8.54164 9.36309 8.31125 9.91968 8.3114 10.5C8.31154 11.0803 8.54221 11.6368 8.95265 12.047C9.36309 12.4572 9.91968 12.6876 10.5 12.6875V12.6875ZM13.125 8.20311H14.4364C14.5235 8.20311 14.6071 8.16858 14.6688 8.10708C14.7305 8.04557 14.7653 7.96211 14.7656 7.87499V6.56359C14.7656 6.47627 14.7309 6.39253 14.6692 6.33079C14.6074 6.26905 14.5237 6.23437 14.4364 6.23437H13.125C13.0377 6.23437 12.9539 6.26905 12.8922 6.33079C12.8304 6.39253 12.7958 6.47627 12.7958 6.56359V7.87499C12.7969 8.05546 12.9445 8.20311 13.125 8.20311V8.20311ZM10.5 0C7.71522 0 5.0445 1.10625 3.07537 3.07537C1.10625 5.0445 0 7.71522 0 10.5C0 13.2848 1.10625 15.9555 3.07537 17.9246C5.0445 19.8937 7.71522 21 10.5 21C11.8789 21 13.2442 20.7284 14.5182 20.2007C15.7921 19.673 16.9496 18.8996 17.9246 17.9246C18.8996 16.9496 19.673 15.7921 20.2007 14.5182C20.7284 13.2442 21 11.8789 21 10.5C21 9.12111 20.7284 7.75573 20.2007 6.48182C19.673 5.2079 18.8996 4.05039 17.9246 3.07537C16.9496 2.10036 15.7921 1.32694 14.5182 0.799264C13.2442 0.27159 11.8789 0 10.5 0V0ZM15.9687 14.7536C15.9687 15.4219 15.4219 15.9687 14.7536 15.9687H6.2464C5.57812 15.9687 5.03124 15.4219 5.03124 14.7536V6.2464C5.03124 5.57812 5.57812 5.03124 6.2464 5.03124H14.7536C15.4219 5.03124 15.9687 5.57812 15.9687 6.2464V14.7536V14.7536Z" fill="#4B4B5F" />
+							</svg>
+
+							<a href="http://" target="_blank" rel="noopener noreferrer"></a>
+						</div>
+
+						<a href="rules.html" class="nav__rules" rel="noopener noreferrer">Угода користувача</a>
+					</div>
+				</nav>
+				<div class="header__backet">
+
+				</div>
+				<div class="icon-menu"><span></span></div>
+			</div>
+		</header>
+		<main class="page">
+			<ul class="breadcrumbs breadcrumbs__container">
+				<li><a href="">Головна</a></li>
+				<li>Аліса (серія «ВІП+»)</li>
+			</ul>
+			<section class="product__header product__header__container">
+				<div class="product__slider--wrap">
+					<div class="product__prev"></div>
+					<div class="product__next"></div>
+					<div class="product__slider">
+						<div class="product__wrap swiper-wrapper">
+							<div class="product__slide swiper-slide">
+								<div class="door__details">
+									<div class="door__details--top">ТОП</div>
+								</div>
+								<picture><source srcset="img/door.webp" type="image/webp"><img src="img/door.png" alt=""></picture>
+							</div>
+							<div class="product__slide swiper-slide">
+								<div class="door__details">
+									<div class="door__details--top">ТОП</div>
+								</div>
+								<picture><source srcset="img/door.webp" type="image/webp"><img src="img/door.png" alt=""></picture>
+							</div>
+							<div class="product__slide swiper-slide">
+								<div class="door__details">
+									<div class="door__details--top">ТОП</div>
+								</div>
+								<picture><source srcset="img/door.webp" type="image/webp"><img src="img/door.png" alt=""></picture>
+							</div>
+						</div>
+					</div>
+					<div class="product-pagination"></div>
+				</div>
+				<div class="product__description">
+					<div class="product__title--block">
+						<h1 class="small__title">Аліса<span>(серія «ВІП+»)</span></h1>
+						<div class="avalible">
+							<div class="avalible__point buy-part">
+								<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.87308 5.98571C9.07429 4.7845 10.6455 4.02355 12.3327 3.82588C14.02 3.62821 15.7245 4.00538 17.1709 4.8964C18.6172 5.78743 19.7207 7.14023 20.303 8.73607C20.8853 10.3319 20.9124 12.0775 20.3798 13.6906C19.8472 15.3037 18.7861 16.6901 17.3681 17.6255C15.95 18.5609 14.258 18.9907 12.5654 18.8453C10.8729 18.7 9.27884 17.9881 8.041 16.8247C6.80317 15.6613 5.9939 14.1144 5.74406 12.4341L13.2112 11.3238L7.87308 5.98571Z" fill="#FFCC33" />
+									<path d="M3.1791 11.561C3.04116 10.3923 3.17835 9.20755 3.57972 8.10131C3.98109 6.99507 4.63552 5.99799 5.49077 5.18965L10.6763 10.6761L3.1791 11.561Z" fill="#47A96E" />
+								</svg>
+								<p>Оплата частинами</p>
+							</div>
+							<div class="avalible__point is-for-buy">
+								<svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.2176 5.06646C7.2176 3.8489 6.22273 2.8584 4.99991 2.8584C3.7771 2.8584 2.78223 3.8489 2.78223 5.06646C2.78223 6.28402 3.7771 7.27452 4.99991 7.27452C6.22273 7.27452 7.2176 6.28402 7.2176 5.06646Z" fill="#E8EAF8" />
+									<path d="M4.9986 13.9992L5.89745 12.8234C6.83566 11.5814 9.89663 7.34945 9.89663 5.03573C9.89685 2.0242 7.92898 0.000976562 4.9997 0.000976562C2.07041 0.000976562 0.102539 2.0242 0.102539 5.03595C0.102539 7.52751 3.69704 12.291 4.10588 12.8245L4.9986 13.9992ZM1.90701 5.06679C1.90701 3.36688 3.29432 1.98373 4.9997 1.98373C6.70507 1.98373 8.09238 3.36688 8.09238 5.06679C8.09238 6.7667 6.70507 8.14985 4.9997 8.14985C3.29432 8.14985 1.90701 6.76691 1.90701 5.06679Z" fill="#FDB400" />
+								</svg>
+
+								<p>В наявності в м.Київ</p>
+							</div>
+						</div>
+						<div class="product__description--price">
+							<div class="price__sale">15100 грн</div>
+							<div class="price__usually">15700 грн</div>
+						</div>
+					</div>
+					<div class="product__variable">
+						<form action="#">
+							<div class="variable__section">
+								<p class="variable__title">Розмір</p>
+								<select name="form[2]" class="form">
+									<option value="1" selected>Пункт №1</option>
+									<option value="2">Пункт №2</option>
+									<option value="3">Пункт №3</option>
+									<option value="4">Пункт №4</option>
+								</select>
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label"><span class="checkbox__text">Нержавіючий поріг (+500 грн.)</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label"><span class="checkbox__text">Утеплення короба по периметру (+570 грн.)</span></label>
+								</div>
+							</div>
+							<div class="variable__section">
+								<p class="variable__title">Утеплення коробу з боків</p>
+								<select name="form[1]" class="form">
+									<option value="1" selected>Пункт №1</option>
+									<option value="2">Пункт №2</option>
+									<option value="3">Пункт №3</option>
+									<option value="4">Пункт №4</option>
+								</select>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label"><span class="checkbox__text">Нічник (+800 грн.)</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_6" class="checkbox__label"><span class="checkbox__text">Вирізка широкоформатного вічка (+800 грн.)</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_7" class="checkbox__label"><span class="checkbox__text">Нижній замок MUL-T-LOCK (Ізраїль) (+900 грн.)</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_8" class="checkbox__label"><span class="checkbox__text">Циліндр MUL-T-LOCK (Ізраїль) (+1800 грн.)</span></label>
+								</div>
+							</div>
+							<button data-popup="#popup__form--product" class="btn">замовити двері</button>
+						</form>
+					</div>
+					<div class="delivery">
+						<div class="delivery__wrap">
+							<div class="delivery__item">
+								<div class="delivery__icon">
+									<svg viewBox="0 0 19 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.30679 23.864L8.5131 22.8201L7.23945 21.1449C7.23908 21.1445 7.23871 21.144 7.23834 21.1435C6.93445 20.747 5.48061 18.8239 4.09727 16.5396C3.40513 15.3967 2.71884 14.1442 2.20271 12.9343C1.69591 11.7463 1.31055 10.5033 1.31055 9.40856C1.31055 7.03594 2.08969 4.97435 3.52374 3.50066C4.96009 2.0246 6.97955 1.21484 9.3107 1.21484C11.6418 1.21484 13.6613 2.02459 15.0976 3.50062C16.5316 4.97427 17.3107 7.03578 17.3105 9.40824L9.30679 23.864ZM9.30679 23.864L10.1034 22.8224M9.30679 23.864L10.1034 22.8224M10.1034 22.8224L11.3883 21.1425L11.3883 21.1425M10.1034 22.8224L11.3883 21.1425M11.3883 21.1425L11.3918 21.1379M11.3883 21.1425L11.3918 21.1379M11.3918 21.1379C12.0724 20.2373 13.5276 18.2471 14.8173 16.0524M11.3918 21.1379L14.8173 16.0524M14.8173 16.0524C15.462 14.9555 16.0763 13.7888 16.5322 12.6688M14.8173 16.0524L16.5322 12.6688M16.5322 12.6688C16.9808 11.5663 17.3105 10.4268 17.3105 9.40832L16.5322 12.6688ZM5.88991 9.45262C5.88991 7.57952 7.42191 6.0477 9.3107 6.0477C11.1995 6.0477 12.7315 7.57952 12.7315 9.45262C12.7315 11.3257 11.1995 12.8575 9.3107 12.8575C7.42186 12.8575 5.88991 11.326 5.88991 9.45262Z" stroke="#3B50DE" stroke-width="2" />
+									</svg>
+								</div>
+								<div class="delivery__text">
+									<p class="delivery__title">Самовмвіз зі складу</p>
+									<p class="delivery__subtitle">Замов на сайті та забери сьогодні</p>
+								</div>
+							</div>
+							<div class="delivery__item">
+								<div class="delivery__icon">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.0938 2.67656C2.93442 4.14844 0.300046 5.4 0.239109 5.45625C-0.00932883 5.68125 4.6168e-05 5.35312 4.6168e-05 12.375C4.6168e-05 19.3969 -0.00932883 19.0687 0.239109 19.2984C0.384421 19.4297 11.8172 24 12 24C12.1829 24 23.6157 19.4297 23.761 19.2984C24.0094 19.0687 24 19.3969 24 12.375C24 5.35312 24.0094 5.68125 23.761 5.45625C23.7 5.4 21.0844 4.15781 17.9532 2.69531C13.7907 0.75 12.2016 0.0281239 12.0469 0.014061C11.85 -0.00468826 11.4844 0.159374 6.0938 2.67656ZM16.7063 3.77344C19.2469 4.95937 21.3094 5.94375 21.2907 5.95781C21.2391 6.01406 17.8454 7.35938 17.7657 7.35938C17.6672 7.35938 8.25005 3.36094 8.27817 3.32812C8.34848 3.25781 11.9391 1.60312 12.0094 1.60781C12.0516 1.6125 14.1657 2.5875 16.7063 3.77344ZM11.0813 6.18281C13.5797 7.24219 15.6516 8.12812 15.6891 8.15156C15.7407 8.175 15.1688 8.42812 13.8797 8.94375L12 9.69375L7.37348 7.84219C4.82348 6.825 2.72817 5.97656 2.70942 5.9625C2.65317 5.91094 6.29067 4.22344 6.42192 4.2375C6.48755 4.24687 8.58286 5.11875 11.0813 6.18281ZM6.44536 9.08437L11.2266 10.9969L11.2407 16.5656C11.25 21.8531 11.2454 22.1297 11.1704 22.1062C11.1235 22.0922 8.93442 21.2203 6.30473 20.1656L1.52348 18.2531L1.50942 12.6844C1.50005 7.39687 1.50473 7.12031 1.57973 7.14375C1.62661 7.15781 3.81567 8.02969 6.44536 9.08437ZM22.4907 12.6891L22.4766 18.2531L17.6954 20.1656C15.0657 21.2203 12.8766 22.0922 12.8297 22.1062C12.7547 22.1297 12.75 21.8531 12.7594 16.5656L12.7735 10.9969L17.6016 9.06094C20.2594 8.00156 22.4438 7.12969 22.4672 7.125C22.486 7.125 22.4954 9.62812 22.4907 12.6891Z" fill="#3B50DF" />
+									</svg>
+								</div>
+								<div class="delivery__text">
+									<p class="delivery__title">Доставка</p>
+									<p class="delivery__subtitle">По Києву або транспортною компанією по Україні</p>
+								</div>
+							</div>
+							<div class="delivery__item">
+								<div class="delivery__icon">
+									<svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2.56336 0.197266C1.45496 0.348633 0.546756 1.08594 0.156131 2.15039L0.0242953 2.5166L0.00964683 9.3623C-0.000118792 15.168 0.00964683 16.2617 0.0682405 16.54C0.25867 17.4336 0.84949 18.1904 1.64539 18.5664C2.11414 18.791 2.40711 18.8496 3.15906 18.8838L3.84754 18.9131L3.92566 19.1133C4.04285 19.4062 4.44812 19.9385 4.74597 20.1729C5.03406 20.4023 5.56628 20.6611 5.9325 20.749C6.06433 20.7832 6.36218 20.8076 6.59656 20.8076C7.31921 20.8076 7.92468 20.5879 8.4862 20.124C8.77917 19.8799 9.18445 19.333 9.2821 19.0498L9.33581 18.8984H12.3778H15.4149L15.4979 19.1035C15.6151 19.4062 16.0204 19.9336 16.3182 20.1729C16.6063 20.4023 17.1385 20.6611 17.5048 20.749C17.6366 20.7832 17.9344 20.8076 18.1688 20.8076C18.8915 20.8076 19.4969 20.5879 20.0585 20.124C20.3514 19.8799 20.7567 19.333 20.8544 19.0498L20.9081 18.8984H22.954H25.0048L24.9901 15.2266C24.9755 11.8379 24.9657 11.5254 24.8827 11.2324C24.6825 10.5146 24.4872 10.207 22.9442 8.15625C22.1288 7.06738 21.3231 6.04199 21.1522 5.87598C20.952 5.68066 20.7128 5.50488 20.493 5.39746C19.9022 5.10449 19.7411 5.08008 18.3983 5.08008H17.1874V3.94238C17.1874 3.15625 17.163 2.71191 17.119 2.49219C16.8846 1.42285 16.1034 0.592773 15.0096 0.265625C14.7411 0.182617 14.3309 0.177734 8.78894 0.167969C5.52722 0.163086 2.72449 0.177734 2.56336 0.197266ZM14.453 2.15527C14.7557 2.21875 15.0145 2.43359 15.1415 2.71191C15.2294 2.89746 15.2342 3.24414 15.2342 9.92383V16.9453H12.3094H9.37976L9.17468 16.5498C8.83288 15.8955 8.25183 15.3877 7.53894 15.1289C7.17761 14.9971 6.36218 14.9531 5.96179 15.041C5.10242 15.2314 4.36023 15.8223 3.95496 16.6377L3.80359 16.9453H3.39343C2.61218 16.9453 2.24597 16.7793 2.04578 16.335C1.95789 16.1494 1.95301 15.8174 1.95301 9.52344C1.95301 3.18555 1.95789 2.89746 2.04578 2.71191C2.17273 2.43848 2.39734 2.24316 2.67078 2.16992C2.98328 2.08691 14.0673 2.07227 14.453 2.15527ZM19.6923 7.19434C19.8436 7.30664 22.3046 10.5049 22.3534 10.6465C22.3631 10.6807 21.4647 10.6953 19.7801 10.6953H17.1874V8.85938V7.02832L18.3495 7.04297L19.5165 7.05762L19.6923 7.19434ZM23.0467 14.7969V16.9453H22.0018H20.952L20.7469 16.5498C20.4051 15.8955 19.8241 15.3877 19.1112 15.1289C18.6327 14.9531 17.7098 14.9482 17.2655 15.1191C17.1923 15.1484 17.1874 15.0361 17.1874 13.8984V12.6484H20.1171H23.0467V14.7969ZM7.16296 17.1211C7.53406 17.4141 7.66101 17.8877 7.47546 18.2881C7.11902 19.0547 6.06433 19.0547 5.70789 18.2881C5.48816 17.8193 5.68835 17.2822 6.17664 17.0186C6.27917 16.9648 6.41589 16.9453 6.65027 16.9551C6.92859 16.9697 7.00671 16.9941 7.16296 17.1211ZM18.7352 17.1211C19.1063 17.4141 19.2333 17.8877 19.0477 18.2881C18.6913 19.0547 17.6366 19.0547 17.2801 18.2881C17.0604 17.8193 17.2606 17.2822 17.7489 17.0186C17.8514 16.9648 17.9882 16.9453 18.2225 16.9551C18.5008 16.9697 18.579 16.9941 18.7352 17.1211Z" fill="#3B50DE" />
+									</svg>
+								</div>
+								<div class="delivery__text">
+									<p class="delivery__title">Монетаж в Києві та області</p>
+									<p class="delivery__subtitle">Доставимо та встановимо</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about__product">
+				<div class="about__product__container">
+					<div data-tabs class="tabs">
+						<nav data-tabs-titles class="tabs__navigation about__product--tabs">
+							<button type="button" class="tabs__title _tab-active">Опис</button>
+							<button type="button" class="tabs__title">Характеристики</button>
+							<button type="button" class="tabs__title">Відгуки</button>
+						</nav>
+						<div data-tabs-body class="tabs__content tabs__content--about">
+							<div class="tabs__body">
+								<p>Ексклюзивні броньовані двері Аліса виконані в стилі лофт та мають велике дзеркало з внутрішнього боку. Колір базальту та білої сосни роблять дизайн вишуканим та доречним до сучасних та hi-tech інтер’єрів. Аліса має потужні броньовані характеристики та розумні циліндри Sherlock. Як і всі двері серії VIP+ Аліса важить близько 100 кг, має 2 мм лист металу, антизрізи, броньовані пластини та відповідає найвищому класу захисту приміщень.
+								</p>
+							</div>
+							<div class="tabs__body">
+								<div class="product__characterices">
+									<ul class="characterices__list">
+										<li>
+											<p>Характеристикa </p>
+											<p>very good door</p>
+										</li>
+										<li>
+											<p>Характеристикa </p>
+											<p>very good door</p>
+										</li>
+										<li>
+											<p>Характеристикa </p>
+											<p>very good door</p>
+										</li>
+										<li>
+											<p>Характеристикa </p>
+											<p>very good door</p>
+										</li>
+										<li>
+											<p>Характеристикa </p>
+											<p>very good door</p>
+										</li>
+										<li>
+											<p>Характеристикa </p>
+											<p>very good door</p>
+										</li>
+										<li>
+											<p>Характеристикa </p>
+											<p>very good door</p>
+										</li>
+										<li>
+											<p>Характеристикa </p>
+											<p>very good door</p>
+										</li>
+										<li>
+											<p>Характеристикa </p>
+											<p>very good door</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="review__block">
+									<div class="review__wrap swiper-wrapper">
+										<div class="review__slide swiper-slide">
+											<div class="review__slide--header">
+												<div class="review__img"><picture><source srcset="img/review.webp" type="image/webp"><img src="img/review.png" alt=""></picture></div>
+												<div class="review__name">
+													<p>Влад Кравченко</p>
+												</div>
+												<div class="review__place">
+													<p>м. Київ</p>
+												</div>
+											</div>
+											<p><b>Доставили та встановили через 3 години пiсля замовлення!</b></p>
+											<p>Сподобаляся швидкiсть та оперативнiсть.
+												Все душе бадьоро.
+												На наступний день пiсля замовлення вже мiг визвалятися перед друзями новими бронедверями</p>
+										</div>
+										<div class="review__slide swiper-slide">
+											<div class="review__slide--header">
+												<div class="review__img"><picture><source srcset="img/review.webp" type="image/webp"><img src="img/review.png" alt=""></picture></div>
+												<div class="review__name">
+													<p>Влад Кравченко</p>
+												</div>
+												<div class="review__place">
+													<p>м. Київ</p>
+												</div>
+											</div>
+											<p><b>Доставили та встановили через 3 години пiсля замовлення!</b></p>
+											<p>Сподобаляся швидкiсть та оперативнiсть.
+												Все душе бадьоро.
+												На наступний день пiсля замовлення вже мiг визвалятися перед друзями новими бронедверями</p>
+										</div>
+										<div class="review__slide swiper-slide">
+											<div class="review__slide--header">
+												<div class="review__img"><picture><source srcset="img/review.webp" type="image/webp"><img src="img/review.png" alt=""></picture></div>
+												<div class="review__name">
+													<p>Влад Кравченко</p>
+												</div>
+												<div class="review__place">
+													<p>м. Київ</p>
+												</div>
+											</div>
+											<p><b>Доставили та встановили через 3 години пiсля замовлення!</b></p>
+											<p>Сподобаляся швидкiсть та оперативнiсть.
+												Все душе бадьоро.
+												На наступний день пiсля замовлення вже мiг визвалятися перед друзями новими бронедверями</p>
+										</div>
+										<div class="review__slide swiper-slide">
+											<div class="review__slide--header">
+												<div class="review__img"><picture><source srcset="img/review.webp" type="image/webp"><img src="img/review.png" alt=""></picture></div>
+												<div class="review__name">
+													<p>Влад Кравченко</p>
+												</div>
+												<div class="review__place">
+													<p>м. Київ</p>
+												</div>
+											</div>
+											<p><b>Доставили та встановили через 3 години пiсля замовлення!</b></p>
+											<p>Сподобаляся швидкiсть та оперативнiсть.
+												Все душе бадьоро.
+												На наступний день пiсля замовлення вже мiг визвалятися перед друзями новими бронедверями</p>
+										</div>
+									</div>
+									<div class="review-pagination"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="call-me">
+				<div class="call-me__container">
+					<h3>
+						Виникли труднощі з вибором дверей?
+					</h3>
+					<div class="call-me__wrap">
+						<p>Заповніть форму і наш спеціалість проведе точний замір</p>
+						<p>параметрів дверей та допоможе зробити правильний вибір.</p>
+						<form action="#">
+							<div class="form__input">
+								<input type="text" placeholder="Ваше iм’я" required>
+							</div>
+							<div class="form__input">
+								<input type="number" placeholder="Телефон" required>
+							</div>
+
+							<button class="btn">Викликати замірщика</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo">
+					<a data-goto=".banner" href="" class="footer__logo--ibg">
+						<img src="img/white-logo.svg" alt="">
+					</a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html#banner">Головна</a></li>
+						<li><a href="index.html#catalog">Каталог</a></li>
+						<li><a href="index.html#catalog">Знижки</a></li>
+						<li><a href="index.html#include">Технологія</a></li>
+						<li><a href="index.html#our-work">Фото робіт</a></li>
+						<li><a href="index.html#review">Відгуки</a></li>
+						<li><a href="index.html#peculiarities">Особливості</a></li>
+						<li><a href="index.html#footer">Контакти</a></li>
+					</ul>
+					<div class="social__page">
+						<div class="social__link">
+							<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10.5 0C4.70093 0 0 4.70093 0 10.5C0 16.299 4.70093 21 10.5 21C16.299 21 21 16.299 21 10.5C21 4.70093 16.299 0 10.5 0ZM12.9872 7.25593H11.4089C11.2219 7.25593 11.014 7.50202 11.014 7.82905V8.96874H12.9883L12.6897 10.5941H11.014V15.4733H9.15139V10.5941H7.46155V8.96874H9.15139V8.0128C9.15139 6.64124 10.103 5.52671 11.4089 5.52671H12.9872V7.25593Z" fill="#4B4B5F" />
+							</svg>
+
+
+							<a href="http://" target="_blank" rel="noopener noreferrer"></a>
+						</div>
+						<div class="social__link">
+							<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.7812 10.5C13.7812 11.3702 13.4355 12.2048 12.8202 12.8202C12.2048 13.4355 11.3702 13.7812 10.5 13.7812C9.62975 13.7812 8.79515 13.4355 8.1798 12.8202C7.56444 12.2048 7.21874 11.3702 7.21874 10.5C7.21874 10.313 7.23843 10.1303 7.27233 9.95311H6.12499V14.3248C6.12499 14.6289 6.37109 14.875 6.67515 14.875H14.3259C14.4716 14.8747 14.6113 14.8166 14.7142 14.7135C14.8172 14.6103 14.875 14.4705 14.875 14.3248V9.95311H13.7276C13.7615 10.1303 13.7812 10.313 13.7812 10.5V10.5ZM10.5 12.6875C10.7873 12.6874 11.0718 12.6307 11.3373 12.5207C11.6027 12.4107 11.8439 12.2495 12.047 12.0462C12.2501 11.843 12.4112 11.6018 12.5211 11.3363C12.631 11.0708 12.6876 10.7862 12.6875 10.4989C12.6874 10.2116 12.6307 9.92704 12.5207 9.66161C12.4107 9.39617 12.2495 9.155 12.0462 8.95187C11.843 8.74874 11.6018 8.58763 11.3363 8.47774C11.0708 8.36785 10.7862 8.31132 10.4989 8.3114C9.91859 8.31154 9.36211 8.54221 8.95187 8.95265C8.54164 9.36309 8.31125 9.91968 8.3114 10.5C8.31154 11.0803 8.54221 11.6368 8.95265 12.047C9.36309 12.4572 9.91968 12.6876 10.5 12.6875V12.6875ZM13.125 8.20311H14.4364C14.5235 8.20311 14.6071 8.16858 14.6688 8.10708C14.7305 8.04557 14.7653 7.96211 14.7656 7.87499V6.56359C14.7656 6.47627 14.7309 6.39253 14.6692 6.33079C14.6074 6.26905 14.5237 6.23437 14.4364 6.23437H13.125C13.0377 6.23437 12.9539 6.26905 12.8922 6.33079C12.8304 6.39253 12.7958 6.47627 12.7958 6.56359V7.87499C12.7969 8.05546 12.9445 8.20311 13.125 8.20311V8.20311ZM10.5 0C7.71522 0 5.0445 1.10625 3.07537 3.07537C1.10625 5.0445 0 7.71522 0 10.5C0 13.2848 1.10625 15.9555 3.07537 17.9246C5.0445 19.8937 7.71522 21 10.5 21C11.8789 21 13.2442 20.7284 14.5182 20.2007C15.7921 19.673 16.9496 18.8996 17.9246 17.9246C18.8996 16.9496 19.673 15.7921 20.2007 14.5182C20.7284 13.2442 21 11.8789 21 10.5C21 9.12111 20.7284 7.75573 20.2007 6.48182C19.673 5.2079 18.8996 4.05039 17.9246 3.07537C16.9496 2.10036 15.7921 1.32694 14.5182 0.799264C13.2442 0.27159 11.8789 0 10.5 0V0ZM15.9687 14.7536C15.9687 15.4219 15.4219 15.9687 14.7536 15.9687H6.2464C5.57812 15.9687 5.03124 15.4219 5.03124 14.7536V6.2464C5.03124 5.57812 5.57812 5.03124 6.2464 5.03124H14.7536C15.4219 5.03124 15.9687 5.57812 15.9687 6.2464V14.7536V14.7536Z" fill="#4B4B5F" />
+							</svg>
+
+							<a href="http://" target="_blank" rel="noopener noreferrer"></a>
+						</div>
+					</div>
+					<div class="footer__footer__container"><a href="rules.html" target="_blank" rel="noopener noreferrer">Угода користувача</a></div>
+				</nav>
+				<div class="footer__social">
+					<ul>
+						<li>
+							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.00096 0C3.13525 0 0.000976562 3.13428 0.000976562 7C0.000976562 10.8657 3.13525 14 7.00096 14C10.8667 14 14.0009 10.8656 14.0009 7C14.0009 3.13428 10.8667 0 7.00096 0ZM10.6974 10.2138L10.1369 10.7744C10.0369 10.8743 9.74387 10.9366 9.73447 10.9366C7.96137 10.9521 6.25415 10.2556 4.99978 9.00115C3.74198 7.74263 3.04471 6.02931 3.06344 4.25024C3.06344 4.24944 3.12761 3.96483 3.22758 3.8658L3.78803 3.30527C3.99312 3.09923 4.38708 3.00612 4.66306 3.09845L4.78096 3.13777C5.05613 3.23002 5.34504 3.53428 5.42107 3.81459L5.703 4.84933C5.77902 5.13045 5.67648 5.53038 5.47145 5.73547L5.09722 6.10976C5.46464 7.46996 6.53189 8.53742 7.89233 8.90574L8.26641 8.53136C8.47245 8.32532 8.87224 8.22286 9.15275 8.29878L10.1873 8.58171C10.4677 8.65875 10.7719 8.94584 10.8641 9.22093L10.9035 9.34053C10.9949 9.61573 10.9025 10.0096 10.6974 10.2138Z" fill="#E4E4E4" />
+							</svg>
+							<a href="tel:">+380 966 26 60 09</a>
+						</li>
+						<li>
+							<svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.2176 5.06646C7.2176 3.8489 6.22273 2.8584 4.99991 2.8584C3.7771 2.8584 2.78223 3.8489 2.78223 5.06646C2.78223 6.28402 3.7771 7.27452 4.99991 7.27452C6.22273 7.27452 7.2176 6.28402 7.2176 5.06646Z" fill="#E4E4E4" />
+								<path d="M4.9986 13.9992L5.89745 12.8234C6.83566 11.5814 9.89663 7.34945 9.89663 5.03573C9.89685 2.0242 7.92898 0.000976562 4.9997 0.000976562C2.07041 0.000976562 0.102539 2.0242 0.102539 5.03595C0.102539 7.52751 3.69704 12.291 4.10588 12.8245L4.9986 13.9992ZM1.90701 5.06679C1.90701 3.36688 3.29432 1.98373 4.9997 1.98373C6.70507 1.98373 8.09238 3.36688 8.09238 5.06679C8.09238 6.7667 6.70507 8.14985 4.9997 8.14985C3.29432 8.14985 1.90701 6.76691 1.90701 5.06679Z" fill="#E4E4E4" />
+							</svg>
+							вул. Маршала Тимошенко, 19
+						</li>
+						<li>
+							<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.8083 1.18209C13.611 0.893117 13.2791 0.702148 12.9046 0.702148H1.09473C0.728109 0.702148 0.403922 0.886336 0.205078 1.16524L7.02133 6.8488L13.8083 1.18209Z" fill="#E4E4E4" />
+								<path d="M0.00195312 2.13477V10.2042C0.00195312 10.8058 0.494141 11.298 1.0957 11.298H12.9056C13.5071 11.298 13.9993 10.8058 13.9993 10.2042V2.16386L7.0223 7.98895L0.00195312 2.13477Z" fill="#E4E4E4" />
+							</svg>
+							<a href="mailto:">verydveri@gmail.com</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+	<div id="popup__form" aria-hidden="true" class="popup popup__succes">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					<div class="popup__form--main">
+						<p class="form__title">Наш експерт дасть відповідь <br> на всі ваші запитання.</p>
+						<form action="#">
+							<input type="numper" required placeholder="Телефон" name="phone">
+							<input type="text" required placeholder="Ваше iм’я" name="name">
+							<button class="btn">залишити заявку</button>
+						</form>
+					</div>
+					<div class="popup__form--succes no-active">
+						<div class="popup__title">
+							Дякуємо!
+						</div>
+						<p>Ваша заявка успішно відправлена <br>
+							на опрацювання. Наш менеджер <br>
+							скоро вам зателефонує.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- при успешной отпрвки формы убрать класс "no-active" у popup__form--succes и добавить popup__form--main -->
+
+
+
+	<div id="popup__form--product" aria-hidden="true" class="popup popup__succes">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					<div class="popup__form--main">
+						<p class="form__title">Для оформлення покупки заповніть <br> форму та надішліть її нам.</p>
+						<form action="#">
+							<input type="numper" required placeholder="Телефон" name="phone">
+							<input type="text" required placeholder="Ваше iм’я" name="name">
+							<textarea name="text"></textarea>
+							<button class="btn">залишити заявку</button>
+						</form>
+					</div>
+					<div class="popup__form--succes no-active">
+						<div class="popup__title">
+							Дякуємо!
+						</div>
+						<p>Ваша заявка успішно відправлена <br>
+							на опрацювання. Наш менеджер <br>
+							скоро вам зателефонує.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="popup__succes--form ">
+		<div class="popup__succes--content">
+			<button type="button" class="popup__close--succes"></button>
+			<div class="popup__title">
+				Дякуємо!
+			</div>
+			<p>Ваша заявка успішно відправлена <br>
+				на опрацювання. Наш менеджер <br>
+				скоро вам зателефонує.
+			</p>
+		</div>
+	</div>
+
+	<!-- 
+при успешной отпрвки формы с главного баннера добавить этому попвпу класс _show -->
+	<script src="js/app.min.js?_v=20220205115345"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20220205115345"></script>
+</body>
+
+</html>
